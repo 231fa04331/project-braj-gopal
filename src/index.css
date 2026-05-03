@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #FF6B00;
+    color: white;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .gradient-saffron {
+    background: linear-gradient(135deg, #FF6B00 0%, #FFA726 50%, #FFB74D 100%);
+  }
+
+  .gradient-maroon {
+    background: linear-gradient(135deg, #7B1B1B 0%, #5A1111 100%);
+  }
+
+  .gradient-nature {
+    background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #388E3C 100%);
+  }
+
+  .gradient-hero {
+    background: linear-gradient(
+      135deg,
+      #7B1B1B 0%,
+      #5A1111 30%,
+      #3A0909 60%,
+      #1B5E20 100%
+    );
+  }
+
+  .text-gradient-saffron {
+    background: linear-gradient(135deg, #FF6B00, #FFA726);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1 shadow-xl;
+  }
+
+  .ornament-line {
+    @apply w-16 h-1 bg-saffron-500 rounded-full;
+  }
+
+  .devanagari-text {
+    font-family: 'Tiro Devanagari Hindi', serif;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animate-delay-600 {
+    animation-delay: 600ms;
+  }
+  .animate-delay-700 {
+    animation-delay: 700ms;
+  }
+  .animate-delay-800 {
+    animation-delay: 800ms;
+  }
+}
