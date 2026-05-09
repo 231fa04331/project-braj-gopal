@@ -9,13 +9,13 @@ const sevas = [
     key: 'gauseva',
     icon: Heart,
     color: 'saffron',
-    image: '/gauseva.jpg',
+    image: '/gauseva.png',
   },
   {
     key: 'sadhu',
     icon: Users,
     color: 'maroon',
-    image: '/sadhu-seva.jpg',
+    image: '/sadhu-seva.png',
   },
 ] as const;
 
